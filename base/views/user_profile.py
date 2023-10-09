@@ -5,8 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
 from base.models import Room, Topic, Message, User
-from base.forms.user_forms import UserForm
-from base.forms.room_forms import RoomForm
+from base.forms import UserForm
 
 
 def userProfile(request, pk):
